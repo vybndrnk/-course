@@ -1,0 +1,252 @@
+/* Основные стили */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i');
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body	{
+	margin: 0 auto;
+	background: #000;
+	
+}
+
+div.container	{
+	display: flex;
+	flex-flow: column nowrap;
+	width:100%;
+	/*добавляем максимальную ширину*/
+	max-width: 1240px;
+	/*для обеспечения адаптивности сайта*/
+	margin: 0 auto;
+	background: #fff;
+	font-family:"Droid Serif";
+	font-size: 16px;
+	color: #656565;
+	line-height: 1.5;
+}
+
+a {
+	color:#CC4A00 ;
+	text-decoration: none;}
+
+	h1 {
+		font-family: "Open Sans";
+	}
+
+	p {
+		text-align: justify;
+	}
+
+
+	header {
+		width:100%;
+		padding: 24px 75px;
+
+	}
+
+	header h1 {
+		color: #252525;
+		font-size: 34px;
+		font-weight: bold;
+	}
+
+	header a h1 {
+		-webkit-transition: color 0.5s linear; /* Safari 3.1 to 6.0 */
+		transition: color 0.5s linear;
+		-webkit-transition: text-decoration 0.5s linear; /* Safari 3.1 to 6.0 */
+		transition: text-decoration 0.5s linear;
+	}
+
+	header a h1:hover {
+		color: #5B5B5B;
+		text-decoration: underline;
+		text-decoration-color: #DEDEDE;
+	}
+
+	header p {
+		color: #9A9A9A;
+		font: 18px italic Droid Serif;
+		font-weight: 400;
+	}
+
+	div.slider img{
+		width:100%;
+		height:100%;
+		max-height: 400px;
+		margin-bottom: 48px;
+
+	}
+
+	main {
+		padding: 48px 75px;
+		width:100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	div.column-left {
+		width: 66%;
+	}
+
+	.column-right {
+		width: 33%;
+		max-width: 300px;
+
+	}
+
+	article {
+		border-bottom: 1px solid #e3e3e3;
+		padding-bottom: 24px;
+		margin-bottom: 48px;
+	}
+
+	article a img {
+		width: 100%;
+		opacity: 0.85;
+		padding-bottom: 25px;
+		transform: translateZ(0);
+		-webkit-transition: opacity 0.5s linear; /* Safari 3.1 to 6.0 */
+		transition: opacity 0.5s linear;
+
+	}
+
+	article a img:hover {
+		opacity:1;
+	}
+
+	article h1 {
+		font: 32px;
+	}
+
+	article a h1 {
+		color: #252525;
+		-webkit-transition: color 0.5s linear; /* Safari 3.1 to 6.0 */
+		transition: color 0.5s linear;
+		-webkit-transition: text-decoration 0.5s linear; 
+		transition: text-decoration 0.5s linear;
+	}
+
+	article a h1:hover {
+		color:#CC4A00;
+		text-decoration: underline;
+	}
+
+	.meta {
+		margin-bottom: 20px;
+	}
+
+	.meta span {
+		margin-right:10px;
+		color:#7F7F7F;
+	}
+
+	.meta span a {
+		color:#CC4A00;
+	}
+
+	.column-right section {
+		margin-bottom: 48px;
+		margin-top: 7px;
+
+	}
+
+	.column-right section section {
+		border-bottom: 2px solid #CC4A00;
+		padding-bottom:6px;
+		margin-bottom:20px;
+	}
+
+	.column-right section span {
+		font-size: 13px;
+		color: #fff;
+		text-transform: uppercase;
+		background: #CC4A00;
+		padding:12px 24px 10px;
+	}
+
+	select {
+		color: #858585;
+		background: #f3f3f3;
+		border: 1px solid #e3e3e3;
+		padding:7px;
+		width:100%;
+	}
+
+	div.tags {
+		width:100%;
+	}
+
+	div.tags a:hover {
+		text-decoration: underline;
+	}
+
+	.meta ul {
+		margin-left: 20px;
+		width:100%;
+		padding: 0; 
+
+	}
+
+	.meta ul li {
+		color: #656565;
+	}
+
+	.meta ul li a {
+		color:orange;
+		font-family: "Open Sans"
+		font-weight:normal;
+	}
+
+@media screen and (max-width: 610px) {
+	.container	{
+		flex-flow: column;
+		align-items: stretch;
+	}
+
+	main {
+		flex-flow: column wrap;
+		padding: 5px 5px;
+	}
+
+	.column-left {
+		min-width: 100%;;
+		padding: 3px;
+	}
+
+	.column-right {
+		min-width: 100%;;
+		padding: 3px;
+	}
+
+	article section{
+		padding: 15px 7px;
+		margin-bottom: 40px;
+	}
+	div.slider img{
+		margin-bottom: 10px;
+	}
+
+header {
+	padding: 15px 15px;
+	}
+
+header h1 {
+	font-size: 28px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
